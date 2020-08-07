@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>WEB LOADER</title>
+</head>
+<body>
+<div class="maincontainer">
+	<div class="container">
+	
+
+		<!-- <svg width="100%" height="100%" >
+			<circle cx="50%" cy="50%" r="40%" stroke="black" stroke-width="5%" fill="none">
+
+
+		</svg> -->
+		<svg width="500" height="500" viewBox="-250 -250 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="5%" stroke="rgba(65, 131, 215, 1)">
+
+<circle cx="0" cy="0" r="146.5" fill="rgba(34, 49, 63, 1)"/>
+</svg>
+
+</svg>
+
+
+		
+		
+
+	</div>
+</div>
+
+<script>
+
+
+setInterval(function generateRandomColor()
+{
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    console.log(randomColor);
+   document.getElementsByTagName("svg")[0].setAttribute("stroke", randomColor);
+    //random color will be freshly served
+
+},2000);
+
+
+</script>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

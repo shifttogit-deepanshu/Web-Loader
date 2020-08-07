@@ -1,0 +1,62 @@
+body{
+	margin:0%;
+padding:0%;
+height:100%;
+background-color:rgba(34, 49, 63, 1);
+}
+.maincontainer{
+	height:100vh;
+	width:100vw;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	height:500px;
+	width:500px;
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	transform-origin:center;
+	animation-timing-function: linear;
+
+
+
+
+}
+svg{
+	
+	animation-name: stroke;
+	animation-duration: 2s;
+	transform-origin:center;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	stroke-dasharray:184.5%;
+	stroke-linecap: round;
+
+		
+}
+@keyframes stroke{
+	0%{
+		stroke-dashoffset:184.5%;
+	}
+	50%{
+		
+		stroke-dashoffset:0%;
+	}
+	100%{
+		stroke-dashoffset:-184.5%;
+	}
+	
+}
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		
+		transform: rotate(360deg);
+	}
+	
+}
+
